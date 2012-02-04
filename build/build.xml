@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?> 
-<project name="SDKClient" default="main" basedir=".">
-	<echo message="flex home: ${FLEX_HOME}" />
+<project name="xa" default="main" basedir="..">
+	<echo message="FLEX_HOME: ${FLEX_HOME}" />
 	<taskdef resource="flexTasks.tasks" classpath="${FLEX_HOME}/ant/lib/flexTasks.jar" />
 	
-	<target name="main" depends="swcdoc, asdoc" description="Clean build of ${ant.project.name}.swc">
+	<target name="main" depends="swcdoc, asdoc, clean-temp-docs" description="Clean build of ${ant.project.name}.swc">
 	</target>
 	
-	<target name="clean" depends="clean-temp-docs">
+	<target name="clean" depends="">
 		<echo message="clean ${ant.project.name}.swc" />
 		<delete failonerror="false">
 			<fileset dir="${basedir}/bin">
@@ -16,7 +16,7 @@
 	</target>
 
 	<target name="clean-temp-docs">
-		<echo message="clean ${ant.project.name}.swc" />
+		<echo message="clean tempDoc" />
 		<delete dir="${basedir}/tempDoc" failonerror="false" includeEmptyDirs="true"/>
 	</target>
 
@@ -47,6 +47,7 @@
 	</target>
 	
 	<target name="asdoc" >
+		<echo message="Generating ASDoc" />
         <exec executable="${FLEX_HOME}/bin/asdoc.exe" failonerror="true">
             <arg line="-source-path '${basedir}/src'" />
             <arg line="-doc-sources '${basedir}/src'" />
