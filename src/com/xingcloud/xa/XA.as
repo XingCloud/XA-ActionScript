@@ -15,11 +15,10 @@ package com.xingcloud.xa
 	import flash.utils.setInterval;
 
 	/**
-	 * Xingcloud Analytics
-	 * 行云GDP接口，通过静态实例的 trackEvent 方法来获取平台服务。</br>
-	 * 如获取好友信息：GDP.instance.trackEvent("get_friends", {type:"all"}, onGetFriends);
+	 * XA是Xingcloud Analytics的缩写，行云统计系统接口类。通过静态实例的 trackEvent 方法来获取平台服务。</br>
+	 * 如发送用户登陆事件 <code>trackEvent("user.login", {step_name:"level_1", time:10});</code>
 	 * @see #trackEvent()
-	 * @author XCloudly
+	 * @author XingCloudly
 	 */
 	public class XA
 	{
@@ -48,7 +47,7 @@ package com.xingcloud.xa
 		public var debug:Boolean = true ;
 		
 		/**
-		 * 是否等待设置用户ID后再自动发送应用访问和心跳事件，默认为true。
+		 * 是否等待设置用户ID后，再自动发送应用访问和心跳事件，默认为true。
 		 */
 		public var waitForUid:Boolean = true;
 		
@@ -62,9 +61,9 @@ package com.xingcloud.xa
 		 */
 		public var refrence:String = "" ;
 		
+		// @throws Error 在生成asdoc后会抢正文内容，故删除
 		/**
 		 * 用户ID，用以确保事件的唯一性。【重要】如果不设置，将生成唯一随机ID；如果设置，其值不能设置为空。
-		 * @throws Error XA: uid set failed for uid is null or ""
 		 */
 		public function get uid():String
 		{
@@ -125,7 +124,7 @@ package com.xingcloud.xa
 		
 		
 		/**
-		 * 初始化。显示让行云统计分析模块启动。
+		 * 初始化。启动行云统计分析模块。
 		 * @param appid - String 应用的ID
 		 * @param uid - String 用户ID，可以延后设置
 		 * @throws Error XA: init failed for appid is null
