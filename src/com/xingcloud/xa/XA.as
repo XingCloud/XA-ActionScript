@@ -37,9 +37,9 @@ package com.xingcloud.xa
 		private var _stockEvents:Array = [] ;
 		private var _readyEvents:Array = [] ;
 		
-	    private var _uidSet:Boolean = false;
+		private var _uidSet:Boolean = false;
 		private var _processing:Boolean = false ;
-	    private var _userVisitEventTracked:Boolean = false ;
+		private var _userVisitEventTracked:Boolean = false ;
 		
 		/**
 		 * 是否开启debug模式，默认为true，会自动输出XA的所有trace信息。
