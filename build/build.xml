@@ -36,7 +36,7 @@
 			<doc-sources path-element="${basedir}/src"/>
 		</asdoc>
 		
-		<!-- updates ExampleFatSWC.swc with asdoc xml -->
+		<!-- updates swc with asdoc xml -->
 		<zip destfile="${basedir}/bin/${ant.project.name}.swc" update="true">
 		    <zipfileset dir="${basedir}/tempDoc/tempdita" prefix="docs">
 			    <include name="*.*"/>

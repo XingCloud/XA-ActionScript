@@ -61,7 +61,7 @@ package com.xingcloud.xa
 		 */
 		public var refrence:String = "" ;
 		
-		// @throws Error 在生成asdoc后会抢正文内容，故删除
+		// @throws Error 在生成asdoc后会抢注释正文内容，故删除
 		/**
 		 * 用户ID，用以确保事件的唯一性。【重要】如果不设置，将生成唯一随机ID；如果设置，其值不能设置为空。
 		 */

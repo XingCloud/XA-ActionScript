@@ -1,4 +1,5 @@
-﻿package com.xingcloud.xa.suport
+﻿// 此乃某大大的私房类很好用，请原作者看到及时通知我(liaoyun@xingcloud.com)，加上签名-_-
+package com.xingcloud.xa.suport
 {
 	public class Json {
 		
