@@ -15,7 +15,7 @@ package com.xingcloud.xa
 	import flash.utils.setInterval;
 
 	/**
-	 * XA是Xingcloud Analytics的缩写，行云统计系统接口类。通过静态实例的 trackEvent 方法来获取平台服务。</br>
+	 * XA是Xingcloud Analytics的缩写，XA类是行云统计系统接口类。通过静态实例的 trackEvent 方法来获取平台服务。</br>
 	 * 如发送用户登陆事件 <code>trackEvent("user.login", {step_name:"level_1", time:10});</code>
 	 * @see #trackEvent()
 	 * @author XingCloudly
