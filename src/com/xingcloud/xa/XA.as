@@ -23,7 +23,7 @@ package com.xingcloud.xa
 	public class XA
 	{
 		private static var _instance:XA = null ;
-		private const XA_VERSION:String = "2.0.0.120113";
+		private const XA_VERSION:String = "2.0.0.120216";
 		private const ENGINE_INTERVAL:Number = 500 ;
 		private const TRACK_INTERVAL:Number = 5000 ;
 		private const HEART_BEAT_INTERVAL:Number = 5 * 60 * 1000 ;
@@ -138,7 +138,7 @@ package com.xingcloud.xa
 			if(_appid && _appid.length > 0)
 				throw new Error("XA: init can only exe one time") ;
 			
-			_xaRequest = new URLRequest("http://analytic.337.com/index.php") ;
+			_xaRequest = new URLRequest("http://analytic.xingcloud.com/index.php") ;
 			_xaLoader = new URLLoader() ;
 			_xaLoader.addEventListener(Event.COMPLETE, onComplete) ;
 			_xaLoader.addEventListener(IOErrorEvent.IO_ERROR, onError) ;
