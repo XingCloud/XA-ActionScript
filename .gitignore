@@ -2,6 +2,7 @@
 
 # SVN directories
 .svn
+.sourceMate
 
 # Flex Builder noise
 .actionScriptProperties
