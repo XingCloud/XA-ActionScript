@@ -254,9 +254,9 @@ package com.xingcloud.xa
 			return "{" + buf.join(" | ") + "}" ;
 		}
 		
-		static private function addDebugInfo(info:String):void
+		static private function addDebugInfo(info:Object):void
 		{
-			trace("XA:", info) ;
+			trace("XA:", info.toString()) ;
 			// call JSProxy.addDebugInfo(info) ;
 		}
 	}
