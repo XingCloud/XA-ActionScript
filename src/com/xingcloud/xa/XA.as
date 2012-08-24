@@ -12,7 +12,7 @@ package com.xingcloud.xa
 	import flash.net.URLRequest;
 	import flash.net.URLRequestMethod;
 	import flash.net.URLVariables;
-	import flash.utils.setInterval;
+	import flash.utils.setInterval; 
 
 	/**
 	 * XA是Xingcloud Analytics的缩写，XA类是行云统计系统接口类。通过静态实例的 trackEvent 方法来获取平台服务。</br>
